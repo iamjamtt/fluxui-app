@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=inter:400,500,600&display=swap" rel="stylesheet" />
 
+        @filamentStyles
         @vite('resources/css/app.css')
         @fluxAppearance
     </head>
@@ -59,6 +60,9 @@
 
         </flux:main>
 
+        @livewire('notifications')
+
+        @filamentScripts
         @fluxScripts
     </body>
 </html>

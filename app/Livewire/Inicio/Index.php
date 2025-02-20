@@ -10,4 +10,9 @@ class Index extends Component
     {
         return view('livewire.inicio.index');
     }
+
+    public function mostrarAlerta()
+    {
+        dd('hola');
+    }
 }

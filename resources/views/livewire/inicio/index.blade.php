@@ -10,4 +10,14 @@
 
     <flux:separator variant="subtle" />
 
+    <div class="mt-6">
+        <flux:button
+            wire:click="mostrarAlerta"
+            variant="primary"
+            icon="bell"
+        >
+            Mostrar Alerta
+        </flux:button>
+    </div>
+
 </div>
