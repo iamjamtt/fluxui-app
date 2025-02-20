@@ -68,7 +68,7 @@
                     </flux:menu>
                 </flux:dropdown>
 
-                <flux:dropdown position="top" align="start">
+                <flux:dropdown position="bottom" align="end">
                     <flux:profile avatar="https://fluxui.dev/img/demo/user.png" name="Jamt Mendoza" />
 
                     <flux:menu>
