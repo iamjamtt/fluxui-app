@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Inicio;
 
+use Filament\Notifications\Notification;
 use Livewire\Component;
 
 class Index extends Component
@@ -13,6 +14,10 @@ class Index extends Component
 
     public function mostrarAlerta()
     {
-        dd('hola');
+        // dd('hola');
+        Notification::make()
+            ->title('Saved successfully')
+            ->success()
+            ->send();
     }
 }

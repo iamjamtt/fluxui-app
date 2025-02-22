@@ -9,8 +9,9 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=inter:400,500,600&display=swap" rel="stylesheet" />
 
-        @vite('resources/css/app.css')
         @fluxAppearance
+        @filamentStyles
+        @vite('resources/css/app.css')
     </head>
     <body class="min-h-screen bg-white dark:bg-zinc-800">
         <flux:sidebar sticky stashable class="bg-zinc-50 dark:bg-zinc-900 border-r border-zinc-200 dark:border-zinc-700">
@@ -59,6 +60,10 @@
 
         </flux:main>
 
+        @livewire('notifications')
+
         @fluxScripts
+        @filamentScripts
+        @vite('resources/js/app.js')
     </body>
 </html>
