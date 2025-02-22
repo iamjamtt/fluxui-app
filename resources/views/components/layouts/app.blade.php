@@ -41,7 +41,22 @@
                 </flux:navlist.item>
             </flux:navlist>
 
-            <livewire:components.dropdown-perfil.index position="bottom" align="start" :sidebar="true" />
+            <div class="max-lg:hidden grid gap-2">
+                <div class="flex items-center justify-between p-2 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-lg">
+                    <div class="flex items-center gap-2">
+                        <img src="https://fluxui.dev/img/demo/user.png" class="w-8 h-8 rounded-sm" />
+                        <div class="flex flex-col gap-1">
+                            <span class="text-sm font-medium text-zinc-700 dark:text-zinc-200">Jamt Mendoza</span>
+                            <span class="text-xs text-zinc-500 dark:text-zinc-400">Administrador</span>
+                        </div>
+                    </div>
+                    <flux:button x-data x-on:click="$flux.dark = ! $flux.dark" icon="moon" variant="subtle" aria-label="Toggle dark mode" size="sm" />
+                </div>
+
+                <flux:button variant="filled" class="w-full cursor-pointer" icon="arrow-right-start-on-rectangle">
+                    Cerrar Sesión
+                </flux:button>
+            </div>
         </flux:sidebar>
 
         <flux:header class="lg:hidden">
